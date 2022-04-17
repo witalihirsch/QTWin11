@@ -17,17 +17,17 @@ pip install darkdetect
 ## Screenshots
 **Now there's only a dark theme**
 
-![Screenshot 1](screenshots/1.png)
+![Screenshot 1](screenshots/1.jpg)
 
-![Screenshot 2](screenshots/2.png)
+![Screenshot 2](screenshots/2.jpg)
 
-![Screenshot 3](screenshots/3.png)
+![Screenshot 3](screenshots/3.jpg)
 
-![Screenshot 1](screenshots/4.png)
+![Screenshot 1](screenshots/4.jpg)
 
-![Screenshot 2](screenshots/5.png)
+![Screenshot 2](screenshots/5.jpg)
 
-![Screenshot 3](screenshots/6.png)
+![Screenshot 3](screenshots/6.jpg)
 
 ## What's hext?
 **Plans for the near future**
