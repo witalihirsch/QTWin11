@@ -33,7 +33,7 @@ pip install darkdetect
 
 ![Screenshot 3](screenshots/6.jpg)
 
-## What's hext?
+## What's next?
 **Plans for the near future**
 - It's planned to make light theme support
 - Refine QTreeWidget
