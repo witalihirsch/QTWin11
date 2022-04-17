@@ -1,6 +1,10 @@
 # QTWin11
 QTWin11 is a template to customize win32 apps using QT. 
 
+## Features
+- This template uses the system accent color
+- Used Mica effect on win32 apps
+
 ## Installing
 ```pwsh
 pip install PySide2
@@ -31,7 +35,7 @@ pip install darkdetect
 
 ## What's hext?
 **Plans for the near future**
-- it's planned to make light theme support
+- It's planned to make light theme support
 - Refine QTreeWidget
 - Refine popup menu of QComboBox and QFontComboBox
 - Apply mica for QMenu in QCalendarWidget
