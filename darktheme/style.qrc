@@ -1,0 +1,101 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>check.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrollrightpressedtrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrollrighthovertrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrollrighttrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrollleftpressedtrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrolllefthovertrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrolllefttrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>NextMonthDisabled.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>PrevMonthDisabled.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>SpinBoxDownDisabled.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>SpinBoxUpDisabled.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>ComboBoxDisabled.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>ToggleSwitchDisabled.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>TreeViewClose.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>TreeViewOpen.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>SpinBoxDownCal.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>SpinBoxUpCal.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>NextMonth.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>PrevMonth.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>SpinBoxDown.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>SpinBoxUp.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>ToggleSwitchOnHover.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>ToggleSwitchOffHover.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>ToggleSwitchOn.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>ToggleSwitchOff.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrollbottompressedtrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrollbottomhovertrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrollbottomtrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrolltoppressedtrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrolltophovertrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Scrolltoptrans.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>combobox.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>radio.png</file>
+  </qresource>
+</RCC>
