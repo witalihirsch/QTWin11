@@ -20,6 +20,9 @@ pip install darkdetect
 ## Requirements
 - Windows 11
 
+## Download
+Download latest release [here](https://github.com/witalihirsch/QTWin11/releases) and run exe file
+
 ## Screenshots
 <p align="center">
   <b>
