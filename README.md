@@ -1,18 +1,11 @@
 # QTWin11
-<<<<<<< HEAD
+
 QTWin11 is a template to customize win32 apps using QT with dark/light mode and Mica material.
 
 ## Features
 - This template uses the system accent color
 - System dark and light mode
 - Used Mica material on win32 apps 
-=======
-QTWin11 is a template to customize win32 apps using QT.
-
-## Features
-- This template uses the system accent color
-- Used Mica effect on win32 apps 
->>>>>>> 7ef3d3ff4a0a7eddc9ae2786b0ff81409920f314
 
 ## Installing
 ```pwsh
@@ -34,7 +27,6 @@ Dark Theme
 </b>
 </p>
 
-<<<<<<< HEAD
 ![Screenshot 1](screenshots/Dark.png)
 
 <p align="center">
@@ -78,25 +70,9 @@ Dark | Light
   <img alt="Screenshot 12" src="screenshots/MenuLight.gif" width="45%">
 </p>
 
-## What's next?
-**Plans for the near future**
-=======
-![Screenshot 1](screenshots/1.jpg)
-
-![Screenshot 2](screenshots/2.jpg)
-
-![Screenshot 3](screenshots/3.jpg)
-
-![Screenshot 1](screenshots/4.jpg)
-
-![Screenshot 2](screenshots/5.jpg)
-
-![Screenshot 3](screenshots/6.jpg)
 
 ## What's next?
 **Plans for the near future**
-- It's planned to make light theme support
->>>>>>> 7ef3d3ff4a0a7eddc9ae2786b0ff81409920f314
 - Refine QTreeWidget
 - Refine popup menu of QComboBox and QFontComboBox
 - Apply mica for QMenu in QCalendarWidget
