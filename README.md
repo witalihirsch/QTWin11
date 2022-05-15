@@ -45,29 +45,29 @@ Dark | Light
 </p>
 
 <p align="center">
-  <img alt="Screenshot 3" src="screenshots/ButtonsDark.gif" width="45%">
+  <img alt="Screenshot 3" src="screenshots/ButtonsDark.gif" width="35%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Screenshot 4" src="screenshots/ButtonsLight.gif" width="45%">
+  <img alt="Screenshot 4" src="screenshots/ButtonsLight.gif" width="35%">
 </p>
 <p align="center">
-  <img alt="Screenshot 5" src="screenshots/SpinsDark.gif" width="45%">
+  <img alt="Screenshot 5" src="screenshots/SpinsDark.gif" width="35%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Screenshot 6" src="screenshots/SpinsLight.gif" width="45%">
+  <img alt="Screenshot 6" src="screenshots/SpinsLight.gif" width="35%">
 </p>
 <p align="center">
-  <img alt="Screenshot 7" src="screenshots/SlidersDark.gif" width="45%">
+  <img alt="Screenshot 7" src="screenshots/SlidersDark.gif" width="35%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Screenshot 8" src="screenshots/SlidersLight.gif" width="45%">
+  <img alt="Screenshot 8" src="screenshots/SlidersLight.gif" width="35%">
 </p>
 <p align="center">
-  <img alt="Screenshot 9" src="screenshots/ScrollsDark.gif" width="45%">
+  <img alt="Screenshot 9" src="screenshots/ScrollsDark.gif" width="35%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Screenshot 10" src="screenshots/ScrollsLight.gif" width="45%">
+  <img alt="Screenshot 10" src="screenshots/ScrollsLight.gif" width="35%">
 </p>
 <p align="center">
-  <img alt="Screenshot 11" src="screenshots/MenuDark.gif" width="45%">
+  <img alt="Screenshot 11" src="screenshots/MenuDark.gif" width="35%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Screenshot 12" src="screenshots/MenuLight.gif" width="45%">
+  <img alt="Screenshot 12" src="screenshots/MenuLight.gif" width="35%">
 </p>
 
 
