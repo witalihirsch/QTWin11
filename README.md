@@ -74,3 +74,4 @@ Dark             |  Light
 - Refine popup menu of QComboBox and QFontComboBox
 - Apply mica for QMenu in QCalendarWidget
 "# test" 
+"# test" 
