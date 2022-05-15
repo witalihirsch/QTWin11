@@ -2,8 +2,13 @@ from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtCore import Qt
 from PySide2.QtWidgets import QPushButton, QLabel, QFrame, QProgressBar, QMainWindow, QApplication
 from winreg import *
+import darkdetect
 
-from dark import *
+if darkdetect.isDark() == True:
+    from dark import *
+else:
+    from light import *
+
 
 registry = ConnectRegistry(None,HKEY_CURRENT_USER)
 key = OpenKey(registry, r'SOFTWARE\\Microsoft\Windows\\CurrentVersion\\Explorer\\Accent')
@@ -21,39 +26,78 @@ class Calendar(QtWidgets.QCalendarWidget):
         self.setHorizontalHeaderFormat(self.ShortDayNames)
         print(self.showSelectedDate())
 
-        for d in (QtCore.Qt.Saturday, QtCore.Qt.Sunday):
-            fmt = self.weekdayTextFormat(d)
-            fmt.setForeground(QtCore.Qt.white)
-            self.setWeekdayTextFormat(d, fmt)
-
-    def paintCell(self, painter, rect, date):
-        if date == date.currentDate():
-            painter.save()
-            painter.fillRect(rect, QtGui.QColor("transparent"))
-            painter.setPen(QtCore.Qt.NoPen)
-            painter.setBrush(QtGui.QColor('#'+accent))
-            r = QtCore.QRect(QtCore.QPoint(), min(rect.width(), rect.height())*QtCore.QSize(1, 1))
-            r.moveCenter(rect.center())
-            painter.drawEllipse(r)
-            painter.setPen(QtGui.QPen(QtGui.QColor("black")))
-            painter.drawText(rect, QtCore.Qt.AlignCenter, str(date.day()))
-            painter.restore()
+        if darkdetect.isDark() == True:
+            for d in (QtCore.Qt.Saturday, QtCore.Qt.Sunday):
+                fmt = self.weekdayTextFormat(d)
+                fmt.setForeground(QtCore.Qt.white)
+                self.setWeekdayTextFormat(d, fmt)
         else:
-            month = "{0}-{1}".format(str(self.yearShown()), str(self.monthShown()).zfill(2))
-            day = str(date.toPython())
-            if day.startswith(month):
-                if date != self.selectedDate(): 
-                    painter.setPen(QtGui.QPen(QtGui.QColor("white")))
-                    painter.drawText(rect, QtCore.Qt.AlignCenter, str(date.day()))
-                if date == self.selectedDate(): 
-                    if date != date.currentDate():
-                        painter.setPen(QtCore.Qt.NoPen)
-                        painter.setBrush(QtGui.QColor(255, 255, 255, 13))
-                        r = QtCore.QRect(QtCore.QPoint(), min(rect.width(), rect.height())*QtCore.QSize(1, 1))
-                        r.moveCenter(rect.center())
-                        painter.drawEllipse(r)
-                        painter.setPen(QtGui.QPen(QtGui.QColor('#'+accent)))
-                        painter.drawText(rect, QtCore.Qt.AlignCenter, str(date.day()))
-            else:
-                painter.setPen(QtGui.QPen(QtGui.QColor(150, 150, 150)))
+            for d in (QtCore.Qt.Saturday, QtCore.Qt.Sunday):
+                fmt = self.weekdayTextFormat(d)
+                fmt.setForeground(QtCore.Qt.black)
+                self.setWeekdayTextFormat(d, fmt)
+
+    if darkdetect.isDark() == True:
+        def paintCell(self, painter, rect, date):
+            if date == date.currentDate():
+                painter.save()
+                painter.fillRect(rect, QtGui.QColor("transparent"))
+                painter.setPen(QtCore.Qt.NoPen)
+                painter.setBrush(QtGui.QColor('#'+accent))
+                r = QtCore.QRect(QtCore.QPoint(), min(rect.width(), rect.height())*QtCore.QSize(1, 1))
+                r.moveCenter(rect.center())
+                painter.drawEllipse(r)
+                painter.setPen(QtGui.QPen(QtGui.QColor("black")))
                 painter.drawText(rect, QtCore.Qt.AlignCenter, str(date.day()))
+                painter.restore()
+            else:
+                month = "{0}-{1}".format(str(self.yearShown()), str(self.monthShown()).zfill(2))
+                day = str(date.toPython())
+                if day.startswith(month):
+                    if date != self.selectedDate(): 
+                        painter.setPen(QtGui.QPen(QtGui.QColor("white")))
+                        painter.drawText(rect, QtCore.Qt.AlignCenter, str(date.day()))
+                    if date == self.selectedDate(): 
+                        if date != date.currentDate():
+                            painter.setPen(QtCore.Qt.NoPen)
+                            painter.setBrush(QtGui.QColor(255, 255, 255, 13))
+                            r = QtCore.QRect(QtCore.QPoint(), min(rect.width(), rect.height())*QtCore.QSize(1, 1))
+                            r.moveCenter(rect.center())
+                            painter.drawEllipse(r)
+                            painter.setPen(QtGui.QPen(QtGui.QColor('#'+accent)))
+                            painter.drawText(rect, QtCore.Qt.AlignCenter, str(date.day()))
+                else:
+                    painter.setPen(QtGui.QPen(QtGui.QColor(150, 150, 150)))
+                    painter.drawText(rect, QtCore.Qt.AlignCenter, str(date.day()))
+    else:
+        def paintCell(self, painter, rect, date):
+            if date == date.currentDate():
+                painter.save()
+                painter.fillRect(rect, QtGui.QColor("transparent"))
+                painter.setPen(QtCore.Qt.NoPen)
+                painter.setBrush(QtGui.QColor('#'+accent))
+                r = QtCore.QRect(QtCore.QPoint(), min(rect.width(), rect.height())*QtCore.QSize(1, 1))
+                r.moveCenter(rect.center())
+                painter.drawEllipse(r)
+                painter.setPen(QtGui.QPen(QtGui.QColor("white")))
+                painter.drawText(rect, QtCore.Qt.AlignCenter, str(date.day()))
+                painter.restore()
+            else:
+                month = "{0}-{1}".format(str(self.yearShown()), str(self.monthShown()).zfill(2))
+                day = str(date.toPython())
+                if day.startswith(month):
+                    if date != self.selectedDate(): 
+                        painter.setPen(QtGui.QPen(QtGui.QColor("black")))
+                        painter.drawText(rect, QtCore.Qt.AlignCenter, str(date.day()))
+                    if date == self.selectedDate(): 
+                        if date != date.currentDate():
+                            painter.setPen(QtCore.Qt.NoPen)
+                            painter.setBrush(QtGui.QColor(0, 0, 0, 13))
+                            r = QtCore.QRect(QtCore.QPoint(), min(rect.width(), rect.height())*QtCore.QSize(1, 1))
+                            r.moveCenter(rect.center())
+                            painter.drawEllipse(r)
+                            painter.setPen(QtGui.QPen(QtGui.QColor('#'+accent)))
+                            painter.drawText(rect, QtCore.Qt.AlignCenter, str(date.day()))
+                else:
+                    painter.setPen(QtGui.QPen(QtGui.QColor(100, 100, 100)))
+                    painter.drawText(rect, QtCore.Qt.AlignCenter, str(date.day()))

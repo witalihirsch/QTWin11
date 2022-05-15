@@ -8,7 +8,10 @@ from win32mica import ApplyMica, MICAMODE
 import darkdetect
 
 from modules.blurwindow import ExtendFrameIntoClientArea, GlobalBlur
-from dark import *
+if darkdetect.isDark() == True:
+    from dark import *
+else:
+    from light import *
 
 class Template(QMainWindow):
     def __init__(self):
@@ -31,9 +34,9 @@ class Template(QMainWindow):
             else:
                 GlobalBlur(hwnd, Acrylic=True, hexColor="#faf7f740", Dark=True, smallCorners=True)
 
-        ApplyMenuBlur(self.ui.menuMenu1.winId().__int__(), self)
-        ApplyMenuBlur(self.ui.menuNew.winId().__int__(), self)
-        ApplyMenuBlur(self.ui.menuMenu2.winId().__int__(), self)
+        ApplyMenuBlur(self.ui.menuFile.winId().__int__(), self)
+        ApplyMenuBlur(self.ui.actionNew.winId().__int__(), self)
+        ApplyMenuBlur(self.ui.menuEdit.winId().__int__(), self)
         ApplyMenuBlur(self.ui.menuHelp.winId().__int__(), self)
 
         self.setAttribute(Qt.WA_TranslucentBackground)
