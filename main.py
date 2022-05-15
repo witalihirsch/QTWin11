@@ -79,3 +79,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     centralwidget = Template()
     sys.exit(app.exec_())
+    

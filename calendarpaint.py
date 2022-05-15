@@ -9,7 +9,6 @@ if darkdetect.isDark() == True:
 else:
     from light import *
 
-
 registry = ConnectRegistry(None,HKEY_CURRENT_USER)
 key = OpenKey(registry, r'SOFTWARE\\Microsoft\Windows\\CurrentVersion\\Explorer\\Accent')
 key_value = QueryValueEx(key,'AccentColorMenu')

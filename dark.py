@@ -15,7 +15,6 @@ accent = str(hex(accent)).split('x')[1]
 accent = accent[4:6]+accent[2:4]+accent[0:2]
 accent = 'rgb'+str(tuple(int(accent[i:i+2], 16) for i in (0, 2, 4)))
 
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
