@@ -2,6 +2,9 @@
 
 QTWin11 is a template (stylesheet) to customize win32 apps using QT with dark/light mode and Mica material.
 
+## Support
+[My Patreon](https://www.patreon.com/witalihirsch)
+
 ## Features
 - This template uses the system accent color
 - System dark and light mode
